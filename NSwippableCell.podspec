@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSwippableCell'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NSwippableCell.'
+  s.summary          = 'An easy-to-use UICollectionViewCell subclass that implements a swipeable content view which exposes utility buttons or views'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  An easy-to-use UICollectionViewCell subclass that implements a swipeable content view which exposes utility buttons or views
                        DESC
 
   s.homepage         = 'https://github.com/itisnajim/NSwippableCell'
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'itisnajim' => 'itisnajim@gmail.com' }
   s.source           = { :git => 'https://github.com/itisnajim/NSwippableCell.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/ItisNajim'
 
   s.ios.deployment_target = '9.0'
 

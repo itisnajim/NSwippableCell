@@ -1,0 +1,6 @@
+framework module NSwippableCell {
+  umbrella header "NSwippableCell-umbrella.h"
+
+  export *
+  module * { export * }
+}

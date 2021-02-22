@@ -1,0 +1,6 @@
+framework module Pods_NSwippableCell_Tests {
+  umbrella header "Pods-NSwippableCell_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
