@@ -10,11 +10,12 @@
 An easy-to-use UICollectionViewCell subclass that implements a swipeable content view which exposes utility buttons or views
 
 ## Preview
+[![Preview Video]()](https://github.com/itisnajim/NSwippableCell/blob/main/preview_video.mp4?raw=true)
 
-![](preview_video.mp4)
+
 
 ## Example
-![](demo_video.mov)
+[![Example Video]()](https://github.com/itisnajim/NSwippableCell/blob/main/demo_video.mov?raw=true)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
