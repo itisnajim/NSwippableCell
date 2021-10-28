@@ -1,31 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - Nimble (8.0.9)
-  - Nimble-Snapshots (4.4.0):
-    - Nimble-Snapshots/Core (= 4.4.0)
-  - Nimble-Snapshots/Core (4.4.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble
-    - Quick
-  - NSwippableCell (0.1.0)
-  - Quick (2.2.1)
+  - Nimble (9.2.1)
+  - NSwippableCell (0.2.0)
+  - Quick (4.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
-  - Nimble (~> 8.0.7)
-  - Nimble-Snapshots
+  - Nimble
   - NSwippableCell (from `../`)
-  - Quick (~> 2.2.0)
+  - Quick
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
     - Nimble
-    - Nimble-Snapshots
     - Quick
 
 EXTERNAL SOURCES:
@@ -33,12 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
-  Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
-  NSwippableCell: 9eace46b90c87cb4091b87d22d6337f51afd9179
-  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  NSwippableCell: 23b0a6d6ac869ea1adffa16c737c7ba388d9d674
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 
-PODFILE CHECKSUM: f7d5fdeb119ed1282a20de96bba4493b54f3b5b8
+PODFILE CHECKSUM: 9988fec71aaf81ccd0dfe4515d5b64da9c6da19f
 
 COCOAPODS: 1.10.1

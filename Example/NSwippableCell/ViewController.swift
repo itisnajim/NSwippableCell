@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 import NSwippableCell
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -76,7 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @objc func revealViewAction(sender: Any) {
         if let sender = sender as? UILabel {
-            let alert = UIAlertController(title: "Alert", message: "The view containing the text "+(sender.text ?? "")+" was clicked", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Alert", message: "The view containing the text "+(sender.text ?? "")+" was clicked", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
+open class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     
     public enum VisiblityState : String {
         case none = "NONE"
@@ -48,7 +48,7 @@ public class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
         return _contentSnapshotView
     }
     
-    public override func updateConstraints() {
+    open override func updateConstraints() {
         super.updateConstraints()
         if let _contentSnapshotView = _contentSnapshotView{
             self.contentView.addConstraints([NSLayoutConstraint.init(item: _contentSnapshotView, attribute: .width, relatedBy: .equal, toItem: self.contentView, attribute: .width, multiplier: 1, constant: 0), NSLayoutConstraint.init(item: _contentSnapshotView, attribute: .height, relatedBy: .equal, toItem: self.contentView, attribute: .height, multiplier: 1, constant: 0)])
@@ -56,29 +56,29 @@ public class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    public override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         
         self.setupView()
     }
     
-    override open class var requiresConstraintBasedLayout: Bool {
+    open override class var requiresConstraintBasedLayout: Bool {
         get {
             return true
         }
     }
     
-    public override func prepareForReuse() {
+    open override func prepareForReuse() {
         super.prepareForReuse()
         self._contentSnapshotView?.removeFromSuperview()
         self._contentSnapshotView = nil
@@ -138,7 +138,7 @@ public class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
         }
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         guard rightRevealView != nil || leftRevealView != nil else {
             return
@@ -273,37 +273,6 @@ public class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
     }
     
 }
-
-
-extension UIColor {
-    
-    static func == (l: UIColor, r: UIColor) -> Bool {
-        var r1: CGFloat = 0
-        var g1: CGFloat = 0
-        var b1: CGFloat = 0
-        var a1: CGFloat = 0
-        l.getRed(&r1, green: &g1, blue: &b1, alpha: &a1)
-        var r2: CGFloat = 0
-        var g2: CGFloat = 0
-        var b2: CGFloat = 0
-        var a2: CGFloat = 0
-        r.getRed(&r2, green: &g2, blue: &b2, alpha: &a2)
-        return r1 == r2 && g1 == g2 && b1 == b2 && a1 == a2
-    }
-    
-    class func firstNonClearBackgroundColorInHierarchy(for view: UIView?) -> UIColor? {
-        var superview: UIView? = view
-        var color: UIColor? = view?.backgroundColor
-        
-        while superview != nil && color == UIColor.clear {
-            superview = superview?.superview
-            color = superview?.backgroundColor
-        }
-        
-        return color
-    }
-}
-
 
 extension UIView {
     public func snapshotImage() -> UIImage? {
