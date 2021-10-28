@@ -1104,7 +1104,7 @@
 			};
 			name = Debug;
 		};
-		295B82656B3762CEE38F25F231BC3A3F /* Release */ = {
+		6021CCE52087F7F4F2559551124FD9F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C027A7F4E342F025BF3DC6F96EE8BD7 /* NSwippableCell.release.xcconfig */;
 			buildSettings = {
@@ -1127,7 +1127,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1216,6 +1216,36 @@
 				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
 				PRODUCT_MODULE_NAME = Quick;
 				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91C855B5571E4519A61EC5469E95FEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECBCF548F17A9D7211B1D5567A38835 /* NSwippableCell.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NSwippableCell/NSwippableCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSwippableCell/NSwippableCell-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NSwippableCell/NSwippableCell.modulemap";
+				PRODUCT_MODULE_NAME = NSwippableCell;
+				PRODUCT_NAME = NSwippableCell;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1382,36 +1412,6 @@
 			};
 			name = Release;
 		};
-		D0A295CAA1C5159A3A5A699A2921FC5C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BECBCF548F17A9D7211B1D5567A38835 /* NSwippableCell.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NSwippableCell/NSwippableCell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NSwippableCell/NSwippableCell-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NSwippableCell/NSwippableCell.modulemap";
-				PRODUCT_MODULE_NAME = NSwippableCell;
-				PRODUCT_NAME = NSwippableCell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E215D804E3857027E55F99D0BB8B1E94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10FEFD3EA1EC893A847B22F65CC592D2 /* Pods-NSwippableCell_Example.release.xcconfig */;
@@ -1499,8 +1499,8 @@
 		A199533F47F8E723B6AC846715142499 /* Build configuration list for PBXNativeTarget "NSwippableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A295CAA1C5159A3A5A699A2921FC5C /* Debug */,
-				295B82656B3762CEE38F25F231BC3A3F /* Release */,
+				91C855B5571E4519A61EC5469E95FEDB /* Debug */,
+				6021CCE52087F7F4F2559551124FD9F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

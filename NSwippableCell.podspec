@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NSwippableCell'
-  s.version          = '0.3.0'
-  s.summary          = 'An easy-to-use UICollectionViewCell subclass that implements a swipeable content view which exposes utility buttons or views'
+  s.version          = '0.3.1'
+  s.swift_version   = '5.0'
+  s.summary          = 'A swipeable UICollectionViewCell subclass that exposes utility buttons or views'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

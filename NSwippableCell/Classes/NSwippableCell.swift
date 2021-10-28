@@ -110,10 +110,10 @@ open class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
         let revealView : UIView = ((gestureDirection == .left) ? rightRevealView ?? leftRevealView : leftRevealView ?? rightRevealView)!;
         revealView.isHidden = true
         self.contentView.addSubview(revealView)
-        self.contentView.sendSubview(toBack: revealView)
+        self.contentView.sendSubviewToBack(revealView)
         if(self._contentSnapshotView == nil){
             self.contentView.addSubview(self.contentSnapshotView()!)
-            self.contentView.bringSubview(toFront: self._contentSnapshotView!)
+            self.contentView.bringSubviewToFront(self._contentSnapshotView!)
         }
         if(self.visiblityState != .none){
             self.contentView.subviews.forEach { (view) in
@@ -203,12 +203,12 @@ open class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
             if(state == .leftView && leftRevealView != nil){
                 leftRevealView?.isHidden = false;
                 self.contentView.addSubview(leftRevealView!)
-                self.contentView.sendSubview(toBack: leftRevealView!)
+                self.contentView.sendSubviewToBack(leftRevealView!)
                 startAnimation(state: state, duration: animated ? 0.1 : 0.0, completion: completion);
             }else if(state == .rightView && rightRevealView != nil){
                 rightRevealView?.isHidden = false;
                 self.contentView.addSubview(rightRevealView!)
-                self.contentView.sendSubview(toBack: rightRevealView!)
+                self.contentView.sendSubviewToBack(rightRevealView!)
                 startAnimation(state: state, duration: animated ? 0.1 : 0.0, completion: completion);
             }else{
                 completion?()
@@ -220,7 +220,7 @@ open class NSwippableCell: UICollectionViewCell, UIGestureRecognizerDelegate {
         
         if(self._contentSnapshotView == nil){
             self.contentView.addSubview(self.contentSnapshotView()!)
-            self.contentView.bringSubview(toFront: self._contentSnapshotView!)
+            self.contentView.bringSubviewToFront(self._contentSnapshotView!)
         }
         self._contentSnapshotView?.isHidden = false
         

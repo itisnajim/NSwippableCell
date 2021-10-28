@@ -1,12 +1,12 @@
 PODS:
   - Nimble (9.2.1)
-  - NSwippableCell (0.2.0)
+  - NSwippableCell (0.3.1)
   - Quick (4.0.0)
 
 DEPENDENCIES:
-  - Nimble
+  - Nimble (~> 9.2.1)
   - NSwippableCell (from `../`)
-  - Quick
+  - Quick (~> 4.0.0)
 
 SPEC REPOS:
   trunk:
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
-  NSwippableCell: 23b0a6d6ac869ea1adffa16c737c7ba388d9d674
+  NSwippableCell: 355556a82c01eafd3b925e0fae05c1a36679cf38
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 
-PODFILE CHECKSUM: 9988fec71aaf81ccd0dfe4515d5b64da9c6da19f
+PODFILE CHECKSUM: 8735aa4c95ccca9d35401af0ff6b0d95713c3474
 
 COCOAPODS: 1.10.1
